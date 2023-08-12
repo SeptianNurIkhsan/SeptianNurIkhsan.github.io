@@ -3,10 +3,18 @@
   background-color: cornflowerblue;
 }
 
-#gallery {
+#karya {
   background-color: #a2d9ff;
 }
 
 section {
   padding-top: 5rem;
+}
+
+.galeri-img {
+  width: 100%;
+}
+
+#galeri .row > * {
+  padding: 0;
 }

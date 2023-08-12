@@ -12,13 +12,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <!-- End Bootstrap icon -->
 
+    <!-- Start AOS (Animated On Screen) atau efek animasi -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- End AOS -->
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css" />
 
     <title>Portfolio | Septian Nur Ikhsan</title>
   </head>
   <body id="home">
-    <!-- Start Navbar -->
+    <!-- start Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Septian Nur Ikhsan</a>
@@ -28,24 +32,27 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#about">About Me</a>
+              <a class="nav-link active" href="#tentang">Tentang</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#gallery">Gallery</a>
+              <a class="nav-link active" href="#karya">Karya</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#contact">Contact</a>
+              <a class="nav-link active" href="#galeri">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#hubungi">Hubungi</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- End Navbar -->
+    <!-- end Navbar -->
 
-    <!-- Start Jumbotron -->
+    <!-- start Jumbotron -->
     <section class="jumbotron text-center">
       <img src="img/img portfolio.jpg" alt="Septian Nur Ikhsan" width="150" class="rounded-circle img-thumbnail" />
       <h1 class="display-4 text-white fw-bold">Septian Nur Ikhsan</h1>
@@ -58,11 +65,11 @@
         ></path>
       </svg>
     </section>
-    <!-- End Jumotron -->
+    <!-- end Jumotron -->
 
-    <!-- Start About Section -->
-    <section id="about">
-      <div class="container">
+    <!-- start Tentang Section -->
+    <section id="tentang">
+      <div class="container" data-aos="zoom-in" data-aos-duration="2000">
         <div class="row text-center mb-2">
           <div class="col">
             <h2>About Me</h2>
@@ -91,35 +98,35 @@
         ></path>
       </svg>
     </section>
-    <!-- End About Section -->
+    <!-- end Tentang Section -->
 
-    <!-- Start Gallery Section -->
-    <section id="gallery">
+    <!-- start Karya Section -->
+    <section id="karya">
       <div class="container">
         <div class="row text-center">
           <div class="col mb-2">
-            <h2>Gallery</h2>
+            <h2>Karya</h2>
           </div>
           <div class="row">
             <div class="col-md-4 mb-4">
-              <div class="card">
-                <img src="img/gallery/1.JPG" class="card-img-top" alt="gallery 1" />
+              <div class="card" data-aos="flip-left" data-aos-duration="2000">
+                <img src="img/karya/1.JPG" class="card-img-top" alt="karya 1" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-4">
-              <div class="card">
-                <img src="img/gallery/2.JPG" class="card-img-top" alt="gallery 2" />
+              <div class="card" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="200">
+                <img src="img/karya/2.JPG" class="card-img-top" alt="karya 2" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-4">
-              <div class="card">
-                <img src="img/gallery/3.JPG" class="card-img-top" alt="gallery 3" />
+              <div class="card" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="400">
+                <img src="img/karya/3.JPG" class="card-img-top" alt="karya 3" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
@@ -136,14 +143,73 @@
         ></path>
       </svg>
     </section>
-    <!-- End Gallery Section -->
+    <!-- end Karya Section -->
 
-    <!-- Start Contact -->
-    <section id="contact">
+    <!-- start Galeri Section -->
+    <section id="galeri">
       <div class="container">
         <div class="row text-center mb-2">
           <div class="col">
-            <h2>Contact</h2>
+            <h2>Galeri</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/sby1.jpg" alt="gambar 1" class="img-fluid galeri-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/sby2.jpg" alt="gambar 2" class="img-fluid galeri-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/sby3.jpg" alt="gambar 3" class="img-fluid galeri-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/sby4.jpg" alt="gambar 4" class="img-fluid galeri-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/sby5.jpg" alt="gambar 5" class="img-fluid galeri-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/sby6.jpg" alt="gambar 6" class="img-fluid galeri-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/sby7.jpg" alt="gambar 7" class="img-fluid galeri-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/sby8.jpg" alt="gambar 8" class="img-fluid galeri-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/sby9.jpg" alt="gambar 9" class="img-fluid galeri-img" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Galeri section -->
+
+    <!-- start hubungi -->
+    <section id="hubungi">
+      <div class="container">
+        <div class="row text-center mb-2">
+          <div class="col">
+            <h2>Hubungi</h2>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -183,15 +249,33 @@
         ></path>
       </svg>
     </section>
-    <!-- End Contact -->
+    <!-- end hubungi -->
 
-    <!-- Start Footer -->
+    <!-- start Footer -->
     <footer class="text-center text-white bg-primary pb-5">
+      <!-- untuk link menuju halaman yang diinginkan -->
       <p>More About Me <i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/septian-nur-ikhsan-3aa54a250/" class="text-white fw-bold">Septian Nur Ikhsan</a></p>
     </footer>
-    <!-- End Footer -->
+    <!-- end Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- script untuk animasi dengan AOS GitHub memakai JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // untuk mencari data dengan nilai galeri image
+      const galeriImage = document.querySelectorAll(".galeri-img");
+      galeriImage.forEach((img, i) => {
+        // untuk bentuk dan waktu animasi
+        img.dataset.aos = "flip-down";
+        img.dataset.aosDelay = i * 100;
+        img.dataset.aosDuration = 1500;
+      });
+
+      AOS.init();
+    </script>
+
+    <!-- untuk file google sheets dengan JavaScript-->
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbyKGWodKPV5fPOBx25zVkszGScSgm58sOdz47RjAYLq-Fl80Zs2NH8egJExgFrTI87ZCg/exec";
       const form = document.forms["Contact-Portfolio"];
@@ -199,6 +283,7 @@
       const btnLoading = document.querySelector(".btn-loading");
       const myAlert = document.querySelector(".my-alert");
 
+      // script untuk animasi di section Contact
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         // ketika tombol submit diklik
