@@ -1,18 +1,29 @@
 .jumbotron {
-  padding-top: 6rem;
-  background-color: #6495ed;
+  height: 100vh;
+  background-color: slategrey;
+}
+
+#tentang {
+  height: 100vh;
+  position: relative;
+  background-color: seashell;
 }
 
 #pencapaian {
-  background-color: #6495ed;
+  background-color: slategrey;
+}
+
+#galeri {
+  background-color: seashell;
 }
 
 section {
-  padding-top: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 #hubungi {
-  background-color: #6495ed;
+  background-color: slategrey;
 }
 
 .galeri-img {
