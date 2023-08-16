@@ -53,7 +53,7 @@
 
     <!-- start Jumbotron -->
     <section class="jumbotron text-center">
-      <div class="jumbotron-fluid">
+      <div class="profile-img jumbotron-fluid">
         <div class="container position-absolute top-50 start-50 translate-middle">
           <img src="img/img portfolio.png" alt="Septian Nur Ikhsan" width="150" class="rounded-circle img-thumbnail" />
           <h1 style="color: seashell" class="display-4 text-white fw-bold">Septian Nur Ikhsan</h1>
@@ -86,34 +86,34 @@
     <!-- start Pencapaian Section -->
     <section id="pencapaian">
       <div class="container">
-        <div class="row text-center">
-          <div class="col mb-4">
-            <h2 style="color: seashell" class="fw-bold text-white">Pencapaian</h2>
+        <div class="row">
+          <div class="col">
+            <h2 style="color: seashell" class="fw-bold text-white text-center">Pencapaian</h2>
           </div>
           <div class="row justify-content-center">
-            <div class="col-md-4 mb-4">
-              <div class="card" data-aos="flip-left" data-aos-duration="2000">
-                <img src="img/pencapaian/Sertif-1.jpg" class="card-img-top" alt="pencapaian 1" />
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="pencapaian-box">
+                <img src="img/pencapaian/Sertif-1.jpg" alt="pencapaian 1" class="pencapaian-img" />
               </div>
             </div>
-            <div class="col-md-4 mb-4">
-              <div class="card" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="200">
-                <img src="img/pencapaian/Sertif-2.jpg" class="card-img-top" alt="pencapaian 2" />
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="pencapaian-box">
+                <img src="img/pencapaian/Sertif-2.jpg" alt="pencapaian 2" class="pencapaian-img" />
               </div>
             </div>
-            <div class="col-md-4 mb-4">
-              <div class="card" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="400">
-                <img src="img/pencapaian/Sertif-3.jpg" class="card-img-top" alt="pencapaian 3" />
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="pencapaian-box">
+                <img src="img/pencapaian/Sertif-3.jpg" alt="pencapaian 3" class="pencapaian-img" />
               </div>
             </div>
-            <div class="col-md-4 mb-4">
-              <div class="card" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="400">
-                <img src="img/pencapaian/Sertif-4.jpg" class="card-img-top" alt="pencapaian 4" />
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="pencapaian-box">
+                <img src="img/pencapaian/Sertif-4.jpg" alt="pencapaian 4" class="pencapaian-img" />
               </div>
             </div>
-            <div class="col-md-4 mb-4">
-              <div class="card" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="400">
-                <img src="img/pencapaian/Sertif-5.jpg" class="card-img-top" alt="pencapaian 5" />
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="pencapaian-box">
+                <img src="img/pencapaian/Sertif-5.jpg" alt="pencapaian 5" class="pencapaian-img" />
               </div>
             </div>
           </div>
@@ -149,31 +149,6 @@
           <div class="col-md-3">
             <a href="#">
               <img src="img/thumbnail/sby4.jpg" alt="gambar 4" class="img-fluid galeri-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/thumbnail/sby5.jpg" alt="gambar 5" class="img-fluid galeri-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/thumbnail/sby6.jpg" alt="gambar 6" class="img-fluid galeri-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/thumbnail/sby7.jpg" alt="gambar 7" class="img-fluid galeri-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/thumbnail/sby8.jpg" alt="gambar 8" class="img-fluid galeri-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/thumbnail/sby9.jpg" alt="gambar 9" class="img-fluid galeri-img" />
             </a>
           </div>
         </div>
@@ -273,6 +248,20 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="tilt/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".img-thumbnail"), {
+        max: 20,
+        speed: 300,
+      });
+    </script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".pencapaian-box"), {
+        max: 15,
+        speed: 200,
       });
     </script>
   </body>
