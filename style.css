@@ -1,21 +1,23 @@
 .jumbotron {
+  background: url(img/img\ background.png);
+  background-size: cover;
+  overflow: hidden;
   height: 100vh;
-  background-color: slategrey;
 }
 
 #tentang {
   height: 100vh;
   position: relative;
-  background-color: seashell;
+  background-color: #1f2833;
 }
 
 #pencapaian {
-  background-color: slategrey;
+  background-color: #0b0c10;
 }
 
-#galeri {
+/* #galeri {
   background-color: seashell;
-}
+} */
 
 section {
   padding-top: 4rem;
@@ -23,7 +25,11 @@ section {
 }
 
 #hubungi {
-  background-color: slategrey;
+  background-color: #1f2833;
+}
+
+.footer {
+  background-color: #0b0c10;
 }
 
 .galeri-img {
@@ -34,43 +40,10 @@ section {
   padding: 0;
 }
 
-/* thumbnail section */
-.profile-img {
-  position: relative;
-  background-color: transparent;
-  height: 500px;
-  transform-style: preserve-3d;
-}
-
-.profile-img::before {
-  position: absolute;
-  top: 30px;
-  left: 32%;
-  transform: translate(-50, 0);
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.profile-img:hover::before {
-  opacity: 0.4;
-}
-
-.img-thumbnail {
-  top: 10%;
-  left: 10%;
-  transform: translate3d(0%, 0%, 100px);
-  max-width: 300px;
-  transition: 0.5s;
-}
-
-.profile-img:hover .img-thumbnail {
-  transform: translate3d(0%, 0%, 100px) rotate(5deg) scale(1.2);
-}
-
 /* pencapaian section */
 .pencapaian-box {
   position: relative;
-  background-color: #212529;
+  background-color: #1f2833;
   border-radius: 10px;
   height: 500px;
   transform-style: preserve-3d;
@@ -85,7 +58,7 @@ section {
   font-style: italic;
   top: 30px;
   left: 32%;
-  transform: translate(-50, 0);
+  transform: translate3d(0, 0, 50px);
   opacity: 0;
   transition: 0.5s;
 }
@@ -103,7 +76,7 @@ section {
   font-style: italic;
   top: 350px;
   left: 12%;
-  transform: translate(-50, 0);
+  transform: translate3d(0, 0, 50px);
   opacity: 0;
   transition: 0.5s;
 }
@@ -115,11 +88,27 @@ section {
 .pencapaian-img {
   top: 10%;
   left: 10%;
-  transform: translate3d(18%, 70%, 100px);
+  transform: translate3d(18%, 70%, 150px);
   max-width: 300px;
   transition: 0.5s;
 }
 
 .pencapaian-box:hover .pencapaian-img {
   transform: translate3d(18%, 70%, 100px) rotate(5deg) scale(1.2);
+}
+
+.detail-button {
+  background-color: #0b0c10;
+  position: absolute;
+  bottom: 20px;
+  left: 40%;
+  transform: translate3d(0, 0, 30px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.pencapaian-box:hover .detail-button {
+  opacity: 1;
+  bottom: 10px;
+  transform: translate3d(0, 0, 30px);
 }
